@@ -1,7 +1,91 @@
 ﻿@page "/"
+@using JoinClass.Web.Components.Layout
 
-<PageTitle>Home</PageTitle>
+<PageTitle>JoinClass - Tema Personalizado</PageTitle>
 
-<h1>Hello, world!</h1>
+<h1>Tema JoinClass para MudBlazor</h1>
 
-Welcome to your new app.
+<p>Bem-vindo ao tema personalizado JoinClass baseado nas variáveis CSS dos seus arquivos HTML.</p>
+
+<div class="d-flex gap-3 mb-3">
+    <MudButton Variant="Variant.Filled" Color="Color.Primary">Botão Primário</MudButton>
+    <MudButton Variant="Variant.Filled" Color="Color.Secondary">Botão Secundário</MudButton>
+    <MudButton Variant="Variant.Outlined" Color="Color.Success">Botão de Sucesso</MudButton>
+    <MudButton Variant="Variant.Text" Color="Color.Warning">Botão de Aviso</MudButton>
+</div>
+
+<MudCard>
+    <MudCardHeader>
+        <CardHeaderContent>
+            <MudText Typo="Typo.h6">Exemplo de Card</MudText>
+            <MudText Typo="Typo.body2">Este card demonstra o uso do tema JoinClass</MudText>
+        </CardHeaderContent>
+    </MudCardHeader>
+    <MudCardContent>
+        <MudText>
+            O tema foi criado baseado nas variáveis CSS dos seus arquivos HTML:
+        </MudText>
+    </MudCardContent>
+    <MudCardActions>
+        <MudButton Variant="Variant.Text" Color="Color.Info">Saber Mais</MudButton>
+    </MudCardActions>
+</MudCard>
+
+<MudGrid>
+    <MudItem xs="12" sm="6" md="3">
+        <MudCard>
+            <MudCardContent>
+                <div class="d-flex flex-column align-center">
+                    <MudIcon Icon="@Icons.Material.Filled.School" Color="Color.Primary" Size="Size.Large" />
+                    <MudText Typo="Typo.h6" Class="mt-2">Aulas</MudText>
+                    <MudText Typo="Typo.body2" Color="Color.Secondary">Gerencie suas aulas</MudText>
+                </div>
+            </MudCardContent>
+        </MudCard>
+    </MudItem>
+
+    <MudItem xs="12" sm="6" md="3">
+        <MudCard>
+            <MudCardContent>
+                <div class="d-flex flex-column align-center">
+                    <MudIcon Icon="@Icons.Material.Filled.People" Color="Color.Success" Size="Size.Large" />
+                    <MudText Typo="Typo.h6" Class="mt-2">Alunos</MudText>
+                    <MudText Typo="Typo.body2" Color="Color.Secondary">Gerencie alunos</MudText>
+                </div>
+            </MudCardContent>
+        </MudCard>
+    </MudItem>
+
+    <MudItem xs="12" sm="6" md="3">
+        <MudCard>
+            <MudCardContent>
+                <div class="d-flex flex-column align-center">
+                    <MudIcon Icon="@Icons.Material.Filled.CalendarToday" Color="Color.Warning" Size="Size.Large" />
+                    <MudText Typo="Typo.h6" Class="mt-2">Calendário</MudText>
+                    <MudText Typo="Typo.body2" Color="Color.Secondary">Veja eventos</MudText>
+                </div>
+            </MudCardContent>
+        </MudCard>
+    </MudItem>
+
+    <MudItem xs="12" sm="6" md="3">
+        <MudCard>
+            <MudCardContent>
+                <div class="d-flex flex-column align-center">
+                    <MudIcon Icon="@Icons.Material.Filled.Payment" Color="Color.Error" Size="Size.Large" />
+                    <MudText Typo="Typo.h6" Class="mt-2">Faturamento</MudText>
+                    <MudText Typo="Typo.body2" Color="Color.Secondary">Controle financeiro</MudText>
+                </div>
+            </MudCardContent>
+        </MudCard>
+    </MudItem>
+</MudGrid>
+
+<MudAlert Severity="Severity.Info" Class="mt-3">
+    <strong>Dica:</strong> Este tema foi criado baseado nas variáveis CSS dos seus arquivos HTML originais e inclui
+    suporte para tema claro e escuro, tipografia Inter/Roboto, sombras personalizadas e border-radius de 12px.
+</MudAlert>
+
+@code {
+
+}

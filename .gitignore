@@ -402,3 +402,8 @@ ASALocalRun/
 
 # Local History for Visual Studio
 .localhistory/
+
+# Templates
+admin_panel.html
+user_panel.html
+landing_page.html

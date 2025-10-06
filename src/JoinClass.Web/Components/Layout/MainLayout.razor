@@ -1,9 +1,142 @@
 ﻿@inherits LayoutComponentBase
+@using MudBlazor
 
-<MudThemeProvider />
+<MudThemeProvider Theme="JoinClassTheme" />
 <MudPopoverProvider />
 <MudDialogProvider />
 <MudSnackbarProvider />
+
+@code {
+    public MudTheme JoinClassTheme = new MudTheme()
+    {
+        Typography = new Typography()
+        {
+            Default = new DefaultTypography()
+            {
+                FontFamily = new[] { "Raleway", "Helvetica", "Arial", "sans-serif" },
+                FontSize = "0.9rem",
+            },
+            H1 = new H1Typography()
+            {
+                FontFamily = new[] { "Ubuntu", "Helvetica", "Arial", "sans-serif" },
+                FontWeight = "600",
+                FontSize = "2.5rem",
+                LineHeight = "1.2",
+            },
+            H2 = new H2Typography()
+            {
+                FontFamily = new[] { "Ubuntu", "Helvetica", "Arial", "sans-serif" },
+                FontWeight = "600",
+                FontSize = "2rem",
+                LineHeight = "1.3",
+            },
+            H3 = new H3Typography()
+            {
+                FontFamily = new[] { "Ubuntu", "Helvetica", "Arial", "sans-serif" },
+                FontWeight = "500",
+                FontSize = "1.75rem",
+            },
+            H4 = new H4Typography()
+            {
+                FontFamily = new[] { "Ubuntu", "Helvetica", "Arial", "sans-serif" },
+                FontWeight = "500",
+                FontSize = "1.5rem",
+            },
+            Body1 = new Body1Typography()
+            {
+                FontFamily = new[] { "Raleway", "Helvetica", "Arial", "sans-serif" },
+                FontWeight = "400",
+                FontSize = "1rem",
+                LineHeight = "1.6",
+            },
+            Button = new ButtonTypography()
+            {
+                FontFamily = new[] { "Ubuntu", "Helvetica", "Arial", "sans-serif" },
+                FontWeight = "600",
+                LetterSpacing = "0.05em",
+            }
+        },
+        PaletteLight = new PaletteLight()
+        {
+            Primary = "#4E8EF7",
+            PrimaryDarken = "#3A6FCC",
+            PrimaryLighten = "#79AFFF",
+
+            Secondary = "#FFB74D",
+            SecondaryDarken = "#E69500",
+            SecondaryLighten = "#FFD180",
+
+            Tertiary = "#6D9DC5",
+            TertiaryDarken = "#4A7FA4",
+            TertiaryLighten = "#94B9D8",
+
+            Info = "#42A5F5",
+            InfoDarken = "#1E88E5",
+            InfoLighten = "#90CAF9",
+
+            Success = "#66BB6A",
+            SuccessDarken = "#388E3C",
+            SuccessLighten = "#A5D6A7",
+
+            Warning = "#FFA726",
+            WarningDarken = "#FB8C00",
+            WarningLighten = "#FFCC80",
+
+            Error = "#EF5350",
+            ErrorDarken = "#D32F2F",
+            ErrorLighten = "#E57373",
+
+            Background = "#FAFAFA",
+            Surface = "#FFFFFF",
+            DrawerBackground = "#FFFFFF",
+            DrawerText = "#333333",
+            AppbarBackground = "#4E8EF7",
+            AppbarText = "#FFFFFF",
+            TextPrimary = "#212121",
+            TextSecondary = "#555555"
+        },
+
+        PaletteDark = new PaletteDark()
+        {
+            Primary = "#90CAF9",
+            PrimaryDarken = "#64B5F6",
+            PrimaryLighten = "#BBDEFB",
+
+            Secondary = "#FFCC80",
+            SecondaryDarken = "#FFB74D",
+            SecondaryLighten = "#FFE0B2",
+
+            Tertiary = "#A5C7E7",
+            TertiaryDarken = "#7FAED4",
+            TertiaryLighten = "#CFE4F5",
+
+            Info = "#64B5F6",
+            InfoDarken = "#42A5F5",
+            InfoLighten = "#90CAF9",
+
+            Success = "#81C784",
+            SuccessDarken = "#66BB6A",
+            SuccessLighten = "#A5D6A7",
+
+            Warning = "#FFB74D",
+            WarningDarken = "#FB8C00",
+            WarningLighten = "#FFD180",
+
+            Error = "#E57373",
+            ErrorDarken = "#D32F2F",
+            ErrorLighten = "#EF9A9A",
+
+            Background = "#121212",
+            Surface = "#1E1E1E",
+            DrawerBackground = "#1C1C1C",
+            DrawerText = "#EEEEEE",
+            AppbarBackground = "#1F2937",
+            AppbarText = "#FFFFFF",
+            TextPrimary = "#E0E0E0",
+            TextSecondary = "#B0B0B0"
+        }
+    };
+}
 
 <div class="page">
     <div class="sidebar">
